@@ -79,6 +79,12 @@ IF DEFINED KUDU_SELECT_NODE_VERSION_CMD (
   SET NODE_EXE=node
 )
 
+echo DEPLOYMENT_SOURCE %DEPLOYMENT_SOURCE%
+echo DEPLOYMENT_TARGET %DEPLOYMENT_TARGET%
+echo DEPLOYMENT_TEMP %DEPLOYMENT_TEMP%
+echo NODE_EXE %NODE_EXE%
+echo NPM_JS_PATH %NPM_JS_PATH%
+
 goto :EOF
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
