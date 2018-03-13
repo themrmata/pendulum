@@ -1,0 +1,83 @@
+    <!-- start sports-news -->
+    <div class="sports-news">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-8">
+				<div class="row">
+                <div class="col-sm-12">
+                    <div class="primary-heading sports-heading">
+                        <h4></h4>
+                        <span class="box"></span>
+                    </div>
+                </div>			
+                <div class="col-md-6">
+                    <div class="photo-gallery-single boxx-shadow">
+                      <div class="sports-post-wrapper post-excerpt">
+                          
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-descr">
+                        <ul class="info sport-posts-list">
+                        
+                        </ul>
+                    </div>
+                </div>					
+				</div>
+				    <!-- start recent-news -->
+    <div class="recent-news-area">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="recent-news-block">
+                        <div class="primary-heading custom-change recent-news-heading">
+                            <h4></h4>
+                            <span class="box"></span>
+                        </div>
+                        <div class="recent-posts-wrapper post-excerpt">
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+    </div>
+    <!-- end recent news -->
+				</div>
+				<div class="col-md-4">
+				<div class="sidebar-widget">
+					  {{> 'most_popular'}}
+				</div>
+				<div class="sidebar-widget">
+						<div class="primary-heading">
+							<h4>Categories</h4>
+							<span class="box"></span>
+						</div>
+						<div class="categories-list">
+							<ul>
+							   {{#get "tags" limit="8" as |tag_info| }}
+								{{#foreach tag_info}}
+								 <li><a href="{{url}}">{{name}}</a></li>
+								{{/foreach}}
+							   {{/get}}
+							</ul>
+						</div>
+				</div>
+				<div class="sidebar-widget">
+						<div class="primary-heading">
+							<h4>Facebook Newsfeed</h4>
+							<span class="box"></span>
+						</div>
+						<div class="fb-timeline-widget">                    
+						 <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthemeix&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1085975151420897" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>						   
+					</div>
+				</div>
+					
+					
+					
+				</div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end sports news -->

@@ -1,0 +1,68 @@
+ 
+ {{> 'config'}}  
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <!--  Top Left Nav -->
+                    <div class="col-sm-6">
+                        <div class="top-left-nav">
+                            <ul>
+                                <li class="current-date"><i class="fa fa-calendar"></i>{{date format="DD MMMM Y"}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--  Top Right Nav -->
+                    <div class="col-sm-6">
+                        <div class="top-right-nav text-right">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Bar -->
+        <div class="middle-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="site-logo">
+                            <a href="{{@blog.url}}">
+                                <img src="{{#if @blog.logo}} {{@blog.logo}} {{else}} /assets/images/logo.png {{/if}}" alt="{{@blog.title}}">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                      {{> 'header_banner_add' }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End middle header -->
+        <div class="main-menu">
+            <!-- Start Navigation -->
+            <div class="header-section pin-style">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-11 nopadding">
+                            {{navigation}} 
+                        </div> 
+                        <div class="col-sm-1">
+                            <div class="drop-card hidden-xs hidden-sm">
+                            <div class="search-btn">
+                                <button class="search-link" data-toggle="modal" data-target="#search-page" ><i class="fa fa-search"></i></button>
+                            </div>
+                             {{> 'search-page'}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end navigation -->
+        </div>
+    </header>

@@ -1,0 +1,55 @@
+    {{!< default}}  
+    <!-- main-news-slider -->
+    <div class="main-news-slider">
+        <div class="container">
+            <div class="row">
+                <!-- news-photo-gallery -->
+                <div class="col-md-8">
+				<div class="row">
+                    <div class="col-md-12">
+                        <div class="primary-heading">
+                          {{#tag}}
+                             <h4>{{name}} Archive </h4>
+                             <span class="box"></span>
+                            {{/tag}}
+                        </div>
+                    </div>
+					</div>
+                    <div class="news-photo-gallery bg-none paddin-left-right-0">
+					<div class="row">                       
+					   {{#foreach posts limit="6"}}						
+                        <div class="col-sm-6">
+                            <div class="photo-gallery-single margin-none">
+                                <div class="post-image" style="{{#if feature_image }} background-image:url({{img_url feature_image}}); {{else}} background-image:url(/assets/images/default-img.png); {{/if}}">
+                                    <div class="caption">
+                                        <a href="{{url}}"><i class="fa fa-file-picture-o"></i></a>
+                                    </div>
+                                </div>
+                                <div class="photo-gallery-content paddin-none">
+                                    <h3 class="entry-title"><a href="{{url}}">{{title}}</a></h3>
+                                    {{excerpt words="15"}}
+                                </div>
+                            </div>
+                        </div>                       
+                        {{/foreach}}
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-post-sidebar"> 
+                    {{> 'sidebar'}}
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add area content -->
+    <div class="add-area-content text-center">
+        <div class="container">
+            <div class="row">
+              {{> 'big_banner_add'}}
+            </div>
+        </div>
+    </div>
+
+

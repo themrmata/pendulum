@@ -1,0 +1,136 @@
+{{!< default}}
+    <div class="main-news-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                   {{#post}}
+                    <div class="top-news-img post-details {{post_class}} ">
+						<div class="img-section-2">
+							<img src="{{#if feature_image}} {{feature_image}} {{else}} /assets/images/default-img.png {{/if}}" alt="{{title}}">
+						</div>
+                        <div class="embeded-video"></div>
+				     </div>
+                    <div class="top-news">
+                        <h1>{{title}}</h1>                         
+                    </div>
+                    <div class="post-details">
+                        {{content}}
+                    </div>
+                    <div class="icon-button">
+                        <div class="middle-section">
+                            <div class="left-link-item">
+                                <ul>
+                                    {{#if tags}}
+                                    {{#foreach tags}}
+                                      <li>
+                                        <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+                                      </li>  
+                                    {{/foreach}}
+                                   {{/if}}
+                                </ul>
+                            </div>
+                            <div class="share-icon">
+                                <span>share on</span>
+                                <ul class="social-icon">
+                                    <li>
+                                        <a href="http://twitter.com/share?text={{encode title}}@amp;url={{url absolute='true'}}" class="skype"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://facebook.com/share?text={{encode title}}@amp;url={{url absolute='true'}}" class="facebook"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://plus.google.com/share?text={{encode title}}@amp;url={{url absolute='true'}}" class="google"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="previou-next-article">
+                           {{#prev_post}}
+                            <div class="left-previou">
+                                <a href="{{url}}"><i class="fa fa-angle-left"></i>Previous Article</a>
+                                <p><a class="post-link" href="{{url}}">{{title}}</a></p>
+                            </div>
+                            {{/prev_post}}
+                            {{#next_post}}
+                            <div class="next-artical">
+                                <a href="{{url}}">Next Article <i class="fa fa-angle-right"></i></a>
+                                <p><a class="post-link" href="{{url}}">{{title}}</a></p>
+                            </div>
+                            {{/next_post}}
+                        </div>
+                        <div class="about-author">
+                            <div class="primary-heading">
+                                <h4>About Author</h4>
+                                <span class="box"></span>
+                            </div>
+                            <div class="author-box">
+                            {{#author}}
+                                <div class="author-img">
+                                    <img src="{{#if profile_image}} {{profile_image}} {{else}} /assets/images/author-image.jpg {{/if}}"  alt="{{name}}">
+                                </div>
+                                <div class="author-details">
+                                    <div class="author-name">
+                                        <h4 class="john">{{name}}</h4>
+                                        <ul class="author-link">
+                                            <li><a href="{{twitter_url}}"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="{{facebook_url}}"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="{{website}}"><i class="fa fa-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    {{bio}}
+                                </div>
+                                {{/author}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        {{> 'disqus_comments'}}
+                    </div>
+                    {{/post}}
+                 </div>
+                <div class="col-sm-4">
+                 <div class="single-post-sidebar">
+                    {{> 'sidebar'}}
+                 </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add area content -->
+    <div class="add-area-content text-center">
+        <div class="container">
+            <div class="row">
+              {{> 'big_banner_add'}}
+            </div>
+        </div>
+    </div>
+    <!-- news-photo-gallery -->
+	<!-- news-photo-gallery -->
+	<div class="news-photo-gallery">
+        <div class="container">
+            <div class="row">
+                {{> 'news_gallery'}} 
+            </div>
+        </div>
+    </div>
+    <!-- purchase now -->
+    <div class="purchase-now mt-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="left-section">
+                        <h5>Do you have any presale question to ask?</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1">
+                    <div class="themeix-button">
+                        <a href="index.html" class="orange-button event-button purchase-btn">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+

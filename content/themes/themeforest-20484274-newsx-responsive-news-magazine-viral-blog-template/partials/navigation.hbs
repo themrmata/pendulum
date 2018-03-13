@@ -1,0 +1,17 @@
+<nav>
+  <div class="navbar-header visible-xs">
+   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+   	 <i class="fa fa-bars"></i>
+   </button>
+    <a href="{{@blog.url}}" class="navbar-brand">
+     	 <img src="{{asset "images/mobile-logo2.png"}}" alt="{{@blog.title}}">
+    </a>
+   </div>
+   <div id="main-menu" class="navbar-collapse collapse">
+   	 <ul class="navbar-nav">
+   	    {{#foreach navigation}}
+   	 	 <li class="nav-menu nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute='true'}}">{{label}}</a></li>
+   	 	{{/foreach}}
+   	 </ul>
+   </div>
+</nav>
