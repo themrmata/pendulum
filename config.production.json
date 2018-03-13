@@ -4,5 +4,6 @@
 		"connection": {
 			"filename": "content/data/ghost.db"
 		} 
+		
 	}
 }    
