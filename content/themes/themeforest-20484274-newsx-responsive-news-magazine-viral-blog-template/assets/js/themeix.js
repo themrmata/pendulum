@@ -27,10 +27,10 @@ var themeix = {
                     var tag_url  = "/tag/" + post_slug;
                     if (post_img_src !== null && post_img_src !== "") {
 
-                        postContainer.append('<div class="col-md-4 col-sm-6"><div class="photo-gallery-single"><div class="post-image"><a class="tag-name green-color" href="' + tag_url + '">' + post_tag + '</a><div class="medium-post-thumb" style="background-image: url(' + post_img_src + ')"></div><div class="caption"> <a href="' + post_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="photo-gallery-content"><h3><a href="' + post_url + '">' + post_title + '</a></h3></div></div></div>');
+                        postContainer.append('<div class="col-md-4 col-sm-6"><div class="photo-gallery-single"><div class="post-image"><a class="tag-name green-color" href="' + tag_url + '">' + post_tag + '</a><div class="medium-post-thumb" style="background-image: url(' + post_img_src + ')"></div><div class="caption"> <a href="' + post_url + '"><i class="fas fa-link"></i></a></div></div><div class="photo-gallery-content"></div></div></div>');
                     } else {
 
-                        postContainer.append('<div class="col-md-4 col-sm-6"><div class="photo-gallery-single"><div class="post-image"> <a class="tag-name green-color" href="' + tag_url + '">' + post_tag + '</a><div class="medium-post-thumb" style="background-image: url(/assets/images/default-img.png)"></div><div class="caption"> <a href="' + post_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="photo-gallery-content"><h3><a href="' + post_url + '">' + post_title + '</a></h3></div></div></div>');
+                        postContainer.append('<div class="col-md-4 col-sm-6"><div class="photo-gallery-single"><div class="post-image"> <a class="tag-name green-color" href="' + tag_url + '">' + post_tag + '</a><div class="medium-post-thumb" style="background-image: url(/assets/images/default-img.png)"></div><div class="caption"> <a href="' + post_url + '"><i class="fas fa-link"></i></a></div></div><div class="photo-gallery-content"></div></div></div>');
                     }
 
                 }
@@ -70,10 +70,10 @@ var themeix = {
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i>' + post_date + '</span></div></div>');
+                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
                     } else {
 
-                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i>' + post_date + '</span></div></div>');
+                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
                     }
 
                 }
@@ -101,10 +101,10 @@ var themeix = {
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i>' + post_date + '</span></div></div>');
+                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
                     } else {
 
-                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i>' + post_date + '</span></div></div>');
+                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
                     }
 
                 }
@@ -132,10 +132,10 @@ var themeix = {
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i> ' + post_date + '</span></div></div>');
+                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div>');
                     } else {
 
-                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i> ' + post_date + '</span></div></div>');
+                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div>');
                     }
 
                 }
@@ -191,11 +191,11 @@ var themeix = {
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        newsContainer.append('<div class="recent-news"><div class="post-image recent-thumb"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="recent-post-image" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="recent-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2><ul class="post-meta"><li> <i class="fa fa-calendar"></i> ' + post_date + '</li></ul><p>' + post_text + '</p></div></div>');
+                        newsContainer.append('<div class="recent-news"><div class="post-image recent-thumb"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="recent-post-image" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="recent-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2><ul class="post-meta"><li> <i class="fas fa-calendar-alt"></i> ' + post_date + '</li></ul><p>' + post_text + '</p></div></div>');
 
                     } else {
 
-                        newsContainer.append('<div class="recent-news"><div class="post-image recent-thumb"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="recent-post-image" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="recent-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2><ul class="post-meta"><li> <i class="fa fa-calendar"></i> ' + post_date + '</li></ul><p>' + post_text + '</p></div></div>');
+                        newsContainer.append('<div class="recent-news"><div class="post-image recent-thumb"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="recent-post-image" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="recent-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2><ul class="post-meta"><li> <i class="fas fa-calendar-alt"></i> ' + post_date + '</li></ul><p>' + post_text + '</p></div></div>');
                     }
 
                  $(".post-excerpt .kg-card-markdown iframe").remove();
@@ -230,9 +230,9 @@ var themeix = {
                     news_title         = news_title.substring(0, 50);
 
                     if (news_img_src !== null && news_img_src !== "") {
-                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i> ' + post_date + '</span></div></div></li>');
+                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div></li>');
                     } else {
-                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fa fa-calendar"></i> ' + post_date + '</span></div></div></li>');
+                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div></li>');
                     }
 
                 }
@@ -277,10 +277,10 @@ var themeix = {
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        editor_slider_wrapper.append('<div class="item"><div class="photo-gallery-single"><div class="post-image"><a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="medium-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="photo-gallery-content"><h3><a href="' + news_url + '">' + news_title + ' </a></h3></div></div></div>');
+                        editor_slider_wrapper.append('<div class="item"><div class="photo-gallery-single"><div class="post-image"><a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="medium-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="photo-gallery-content"></div></div></div>');
                     } else {
 
-                        editor_slider_wrapper.append('<div class="item"><div class="photo-gallery-single"><div class="post-image"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="medium-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="photo-gallery-content"><h3><a href="' + news_url + '">' + news_title + '</a></h3></div></div></div>');
+                        editor_slider_wrapper.append('<div class="item"><div class="photo-gallery-single"><div class="post-image"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="medium-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="photo-gallery-content"></div></div></div>');
                     }
 
                 }
@@ -351,10 +351,10 @@ var themeix = {
                         tag_url = news_url;
                     }
                     if (news_img_src !== null && news_img_src !== "") {
-                        news_wrapper.append('<div class="post-image"> <a class="tag-name" href="' + tag_url + '">'+primary_tag+'</a><div class="medium-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="photo-gallery-content"><h3 class="custom-head-change"><a href="' + news_url + '">' + news_title + '</a></h3><p>' + post_text + '</div>');
+                        news_wrapper.append('<div class="post-image"> <a class="tag-name" href="' + tag_url + '">'+primary_tag+'</a><div class="medium-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="photo-gallery-content"><h3 class="custom-head-change"><a href="' + news_url + '">' + news_title + '</a></h3>' + post_text + '</div>');
                     } else {
 
-                        news_wrapper.append('<div class="post-image"> <a class="tag-name" href="' + tag_url + '">'+primary_tag+'</a><div class="medium-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fa fa-file-picture-o"></i></a></div></div><div class="photo-gallery-content"><h3 class="custom-head-change"><a href="' + news_url + '">' + news_title + '</a></h3><p>' + post_text + '</div>');
+                        news_wrapper.append('<div class="post-image"> <a class="tag-name" href="' + tag_url + '">'+primary_tag+'</a><div class="medium-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="photo-gallery-content"><h3 class="custom-head-change"><a href="' + news_url + '">' + news_title + '</a></h3>' + post_text + '</div>');
 						
                     }
 						

@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------
 	Template name: NewsX Reponsive News, Magazine, Blogging Website Template
 	Author: Themeix
-	Template URI: http://themeforest.com
+	Template URI: https://themeforest.net/item/newsx-responsive-news-magazine-viral-blog-template/edit/20484274?ref=themeix
 	Description: Responsive Template
-	Version: 1.1.0
-	Author URI: http://themeforest.com/user/themeix
+	Version: 2.0.0
+	Author URI: http://themeforest.com/user/themeix?ref=themeix
 
 ----------------------------------------------------------------- */
 
@@ -50,6 +50,7 @@
 	padding: 0;
 	outline: none;
 }
+
 body{
 	font-family: 'Roboto', sans-serif;
 	color: #2b2b2b;
@@ -247,8 +248,12 @@ textarea[name="comment"]:focus{
 	padding-bottom: 75px;
 }
 .section-ptb-2 {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.section-ptb-3 {
+	padding-top:75px;
+	padding-bottom: 45px;
 }
 .padding-tb-82{
 	padding:82px 0px;
@@ -264,6 +269,33 @@ textarea[name="comment"]:focus{
 }
 .mt-42{
 	margin-top:42px;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.pt-75 {
+	padding-top: 75px;
+}
+.pb-75 {
+	padding-bottom: 75px;
+}
+.pb-45 {
+	padding-bottom: 45px;
+}
+.pt-45 {
+	padding-top: 45px;
+}
+.pt-50 {
+	padding-top: 50px;
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.height-240 {
+	height: 240px;
+}
+.transparent-bg {
+	background-color: transparent;
 }
 /*============================
 	2. Tob Bar section
@@ -317,7 +349,8 @@ textarea[name="comment"]:focus{
 /*============================
 	4. Menu style
 ==============================*/
-.header-section{
+.header-section {
+	position: relative;
 	background-color: #2B2B2B;
     top: 0px;
     left: 0px;
@@ -334,7 +367,8 @@ textarea[name="comment"]:focus{
 	padding-top: 20px;
 	font-weight: 700;
 	color: #fff;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: 500;
 	display: block;
 	padding: 20px 15px;
 	-webkit-transition: all 0.4s ease-in-out;
@@ -395,14 +429,14 @@ textarea[name="comment"]:focus{
 .main-menu .navbar-nav > li.nav-current > a {
   background-color:#2196F3;
 }
+.main-menu .navbar-expand-lg {
 
+	padding: 0;
+}
 /*============================
 	5. main news section
 ==============================*/
-.main-news-slider {
-	padding: 50px 0;
-	padding-bottom: 0px;
-}
+
 .top-news h1, .page-heading h1 {
 	font-size: 30px;
 	color: #22263b;
@@ -413,7 +447,13 @@ textarea[name="comment"]:focus{
 }
 .top-news h1 a {
 	color: #22263b;
+	transition: all .4s linear 0s;
+	font-family: "Roboto Slab";
 }
+.top-news h1 a:hover {
+	color: #E12866;
+}
+
 .top-news p{
 	color: #2b2b2b;
 	line-height: 24px;
@@ -432,13 +472,15 @@ textarea[name="comment"]:focus{
     line-height: 24px;
     font-size: 16px;
     font-weight: 700;
+    max-height: 75px;
+    overflow: hidden;
 }
-.item-post-content h2 a{
+.item-post-content h2 a {
 	color: #22263b;
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.item-post-content h2 a:hover{
+.item-post-content h2 a:hover {
 	color: #E12866;
 }
 .item-post-content{
@@ -449,7 +491,7 @@ textarea[name="comment"]:focus{
 	position: relative;
 	max-height: 113px;
 	overflow: hidden;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .single-post .post-thumb{
@@ -576,6 +618,7 @@ textarea[name="comment"]:focus{
 	background: #fff;
 	position: relative;
 	margin-top: 0px;
+	margin-bottom: 30px;
 }
 .photo-gallery-single:last-clild {
 	margin-bottom:0;
@@ -646,7 +689,6 @@ a.tag-name:focus {
 }
 .photo-gallery-single .post-image{
 	position:relative;
-	height:200px;
 	background-repeat:none;
 	background-size:cover;
 	background-position:center center;
@@ -725,10 +767,7 @@ a.tag-name:focus {
 	color: #ffffff;
 }
 .news-photo-gallery {
-    float: left;
-    width: 100%;
-    overflow: hidden;
-	padding-bottom: 60px;
+
 }
  
 .post-image img {
@@ -749,7 +788,14 @@ a.tag-name:focus {
   border:medium none;
   color:#fff;
   padding-top:18px;
+  cursor: pointer;
+  margin-top: 3px;
 }
+button.search-link:focus {
+	outline: 0;
+}
+
+button:focus
 .form-search {
     position: absolute;
     right: 28px;
@@ -814,8 +860,12 @@ input[type="search"] {
 .search-form {
 	position:relative;
 }
-
-.search-page-wrapper .modal-header{
+.search-form input.form-control:focus {
+	outline: 0;
+	border:0;
+}
+.search-page-wrapper .modal-header {
+ display: inline-block;
  padding:15px 15px 0 0;
  border-bottom:0;
 }
@@ -829,10 +879,9 @@ input[type="search"] {
 }
 
 .modal-header button {
-	border-radius:0;
-	float:right;
-	background-color:#e12866;
-	border:0;
+	border-radius: 0;
+	float: right;
+	border: 0;
 }
 .modal-header button:focus {
 border:medium none;
@@ -845,7 +894,11 @@ outline:0;
 #search-field {
 	height:40px;
 	border-radius:0;
+    width: 100%;
+    padding-left: 15px;
 }
+
+
 .search-form {
 	position:relative;
 }
@@ -856,7 +909,7 @@ outline:0;
 	height:40px;
 	width:100px;
 	border:0;
-	background-color:#e12866;
+	background-color: #2B2B2B;
 	color:#fff;
 }
 
@@ -870,8 +923,8 @@ outline:0;
 	color:#777;
 }
 .single-result {
-	margin:5px;
-	padding:5px;
+	margin: 5px;
+	padding: 5px 10px;
 	background-color:#f2f2f2;
 	-webkit-transition: all .3s linear 0s;
 	transition:all .3s linear 0s;
@@ -899,13 +952,12 @@ outline:0;
 	margin: 0 0 25px;
 }
 .primary-heading h4 {
-	color: #2196f3;
+	color: #22263b;
 	font-size: 28px;
 	font-weight: 700;
 	position: relative;
 	display: inline-block;
-	/* margin-left: 20px; */
-	/* padding-left: 25px; */
+	font-family: "Roboto Slab";
 }
  
 .primary-heading{
@@ -947,6 +999,10 @@ outline:0;
      11. sports-news
 =====================================*/
 
+.content-with-sidebar {
+	overflow: hidden;
+}
+
 .custom-boxx {
 	bottom: 217px;
 }
@@ -960,9 +1016,9 @@ outline:0;
 }
 h3.custom-head-change{
 	font-size: 18px;
-	font-weight: 700;
-	line-height: 34px;
-	margin-bottom: 15px;
+	font-weight: 600;
+	line-height: 30px;
+	text-transform: capitalize;
 }
 ul.info li a {
 	font-size: 16px;
@@ -977,14 +1033,18 @@ ul.info li a {
 ul.info li a:hover {
 	 color: #E12866;
 }
-ul.info li:before {
+ul.info li::before {
     content: "\f0da";
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
     margin-right: 10px;
-    color: #8c8c8c;
+    color: #E12866;
+    transition: all .4s linear 0s;
 }
+
 .sport-posts-list li {
 	margin-bottom:10px;
+	max-height: 50px;
+	overflow: hidden;
 }
 .sport-posts-list li:last-child {
 	margin-bottom:0;
@@ -1179,13 +1239,14 @@ ul.info li:before {
 .recent-news {
 	position: relative;
 	padding-bottom: 30px;
-	overflow:hidden;
+	overflow: hidden;
+}
+.recent-news:last-child {
+  padding-bottom: 0;
 }
 .recent-news .post-image {
     position: relative;
-    overflow: hidden;
     width: 35%;
-    height: 170px;
     float:left;
 }
  
@@ -1276,6 +1337,7 @@ ul.info li:before {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
+	text-transform: capitalize;
 }
 .recent-content h2 a{
 	color: #22263b;
@@ -1310,9 +1372,10 @@ ul.info li:before {
 	line-height: 30px;
 	color: #989898;
 }
-.sidebar-widget {
-	margin-bottom: 0px;
-	margin-top: 40px;
+
+.recent-posts-and-sidebar {
+	width: 100%;
+	overflow: hidden;
 }
 .recent-news a.tag-name {
     background-color: #2196F3;
@@ -1320,10 +1383,7 @@ ul.info li:before {
 .recent-news-block ul.post-meta {
     display: none;
 }
-.recent-news-area {
-    padding-top: 75px;
-    padding-bottom: 50px;
-}
+
 /*====================================
      14. category
 =====================================*/
@@ -1353,9 +1413,9 @@ ul.info li:before {
     -o-transition: all 500ms ease;
 	    text-transform: capitalize;
 }
-.categories-list ul li a:before{
+.categories-list ul li a:before {
     content: "\f0da";
-	font-family: 'FontAwesome';
+	font-family: 'Font Awesome 5 Free';
 	margin-right: 10px;
 	color: #E12866;
 }
@@ -1531,6 +1591,7 @@ ul.info li:before {
 	display:inline-block;
 	width: 33.333%;
 	padding: 6px 5px 11px;
+	height: 60px;
 }
 .img{
 	position: relative;
@@ -2075,14 +2136,13 @@ ul.social-icons li a:hover {
 }
 .margin-none {
 	margin-top: 0;
-	margin-bottom:25px;
+	margin-bottom:30px;
 }
 h3.entry-title {
 	font-size: 18px;
 	letter-spacing: 0;
 	line-height: 20px;
 	font-weight: 600;
-	margin-bottom: 12px;
 }
 
 .clearfix{
@@ -2600,9 +2660,7 @@ h3.down_line_black{
 	width: 100%;
 	height: 182px;
 }
-.single-post-sidebar {
-	margin-left:30px;
-}
+
 .single-post-sidebar .sidebar-widget {
 	margin-top:0;
 }
@@ -2611,7 +2669,7 @@ h3.down_line_black{
 	display:none;
 }
 
-.navbar-header .navbar-toggle {
+.navbar-header .navbar-toggler {
     padding: 5px 10px;
     border: 0;
     border-radius: 0;
@@ -2619,7 +2677,7 @@ h3.down_line_black{
     margin-right: 0;
     background-color: #efedee;
 }
-.navbar-header .navbar-toggle i {
+.navbar-header .navbar-toggler i {
 	font-size:20px;
 }
 
@@ -2627,13 +2685,18 @@ h3.down_line_black{
 	max-width:170px;
 }
 
-.navbar-header .navbar-toggle {
+.navbar-header .navbar-toggler {
 	padding:5px 10px;
 }
 .navbar-header .navbar-brand {
 	padding:5px;
 }
-
+.navbar-header {
+	display:none;
+}
+.navbar-toggler {
+	float: right;
+}
 .kg-card-markdown img,
 .kg-card-markdown iframe {
 	margin-bottom:20px;
