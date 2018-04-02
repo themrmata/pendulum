@@ -6,7 +6,9 @@
           {{#post}}
             <div class="top-news-img post-details {{post_class}}">
                 <div class="img-section-2">
-                    <img src="{{#if feature_image}} {{feature_image}} {{else}} /assets/images/default-img.png {{/if}}" alt="{{title}}">
+					{{#if feature_image}}
+						<img src="{{feature_image}}" alt="{{title}}">
+					{{/if}}
                 </div>
                 <div class="embeded-video"></div>
             </div>
@@ -28,7 +30,7 @@
                         </ul>
                     </div>
                     <div class="share-icon">
-                        <span>share on</span>
+                        <span>Compartir</span>
                         <ul class="social-icon">
                             <li>
                                 <a href="http://twitter.com/share?text={{encode title}}@amp;url={{url absolute='true'}}" class="skype"><i class="fab fa-twitter"></i></a>
@@ -45,12 +47,12 @@
                 <div class="previou-next-article">
                     {{#prev_post}}
                     <div class="left-previou">
-                        <a href="{{url}}"><i class="fas fa-angle-left"></i>Previous Article</a>
+                        <a href="{{url}}"><i class="fas fa-angle-left"></i>Artículo Anterior</a>
                         <p><a class="post-link" href="{{url}}">{{title}}</a></p>
                     </div>
                     {{/prev_post}} {{#next_post}}
                     <div class="next-artical">
-                        <a href="{{url}}">Next Article <i class="fas fa-angle-right"></i></a>
+                        <a href="{{url}}">Siguiente Artículo
                         <p><a class="post-link" href="{{url}}">{{title}}</a></p>
                     </div>
                     {{/next_post}}

@@ -338,7 +338,6 @@ textarea[name="comment"]:focus{
 ==============================*/
 .middle-header {
 	background-color: #fff;
-	padding: 30px 0;
 }
 .header-add-area {
 	float:right;
@@ -351,7 +350,7 @@ textarea[name="comment"]:focus{
 ==============================*/
 .header-section {
 	position: relative;
-	background-color: #2B2B2B;
+	background-color: #20B2AA;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -448,7 +447,7 @@ textarea[name="comment"]:focus{
 .top-news h1 a {
 	color: #22263b;
 	transition: all .4s linear 0s;
-	font-family: "Roboto Slab";
+	font-family: "Roboto";
 }
 .top-news h1 a:hover {
 	color: #E12866;
@@ -957,7 +956,7 @@ outline:0;
 	font-weight: 700;
 	position: relative;
 	display: inline-block;
-	font-family: "Roboto Slab";
+	font-family: "Roboto";
 }
  
 .primary-heading{
@@ -1527,7 +1526,7 @@ ul.info li::before {
 	color:#666;
 }
 .footer-overlay{
-    background-color: rgba(0,0,0,.90);
+    background: #20B2AA;
 }
 .logo-area{
     margin-bottom: 30px;
