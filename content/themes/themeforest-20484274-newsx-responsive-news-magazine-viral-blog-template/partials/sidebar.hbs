@@ -1,24 +1,26 @@
-<div class="row p-0"> 
-<div class="col-md-6 col-lg-12"> 
-<!--<div class="sidebar-widget">
-  {{> 'most_popular'}}
-</div>-->
-</div>
-<div class="col-md-6 col-lg-12"> 
-<div class="sidebar-widget pt-45">
-    <div class="primary-heading">
-        <h4>Temas</h4>
-        <span class="box"></span>
+<div class="row"> 
+    <div class="col-md-6 col-lg-12"> 
+        <div class="sidebar-widget">
+            <div class="primary-heading">
+                <h4>Temas</h4>
+                <span class="box"></span>
+            </div>
+            <div class="categories-list">
+                <ul>
+                {{#get "tags" limit="8" as |tag_info| }}
+                    {{#foreach tag_info}}
+                    <li><a href="{{url}}">{{name}}</a></li>
+                    {{/foreach}}
+                {{/get}}
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="categories-list">
-        <ul>
-           {{#get "tags" limit="8" as |tag_info| }}
-            {{#foreach tag_info}}
-             <li><a href="{{url}}">{{name}}</a></li>
-            {{/foreach}}
-           {{/get}}
-        </ul>
-    </div>
-</div>
-</div>
+
+    {{!-- Later add this to a new row when "most recent" posts work
+    <div class="col-md-6 col-lg-12"> 
+        <div class="sidebar-widget pt-45">
+            {{> 'most_popular'}}
+        </div>
+    </div> --}}
 </div>

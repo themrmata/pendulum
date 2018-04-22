@@ -338,6 +338,8 @@ textarea[name="comment"]:focus{
 ==============================*/
 .middle-header {
 	background-color: #fff;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 .header-add-area {
 	float:right;
@@ -350,7 +352,7 @@ textarea[name="comment"]:focus{
 ==============================*/
 .header-section {
 	position: relative;
-	background-color: #20B2AA;
+	background-color: #8bc34a;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -475,7 +477,7 @@ textarea[name="comment"]:focus{
     overflow: hidden;
 }
 .item-post-content h2 a {
-	color: #22263b;
+	color: #2196F3;
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
@@ -570,11 +572,11 @@ textarea[name="comment"]:focus{
 	position:relative;
 	margin-right: 20px;
 }
-.item-post-content span {
-	font-size: 14px;
-	line-height: 30px;
-	color: #989898;
-	display: inline-block;
+.item-post-content p {
+	font-size: 12px;
+	color: #989898;    
+	line-height: normal;
+	display: flex;
 }
 .item-post-content span i{
 	margin-right: 8px;
@@ -1339,7 +1341,7 @@ ul.info li::before {
 	text-transform: capitalize;
 }
 .recent-content h2 a{
-	color: #22263b;
+	color: #2196F3;
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
@@ -1526,7 +1528,7 @@ ul.info li::before {
 	color:#666;
 }
 .footer-overlay{
-    background: #20B2AA;
+    background: #8bc34a;
 }
 .logo-area{
     margin-bottom: 30px;
@@ -2696,6 +2698,13 @@ h3.down_line_black{
 .navbar-toggler {
 	float: right;
 }
+
+.kg-card-markdown p{
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
 .kg-card-markdown img,
 .kg-card-markdown iframe {
 	margin-bottom:20px;
@@ -2715,4 +2724,40 @@ h3.down_line_black{
 }
 body.tag-template .add-area-content.text-center.section-ptb {
     padding-top: 0;
+}
+
+
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 28px;
+	font-style: italic;
+	width: 100%;
+	margin: 0.25em 0;
+	padding: 0.35em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+}
+	
+blockquote:before {
+	display: block;
+	padding-left: 10px;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	color: #7a7a7a;
+}
+
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+	/* text-align: right; */
+}
+	
+blockquote cite:before {
+	content: "\2014 \2009";
 }

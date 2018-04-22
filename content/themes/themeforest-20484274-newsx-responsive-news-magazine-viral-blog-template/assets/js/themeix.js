@@ -67,13 +67,16 @@ var themeix = {
                     var news_url     = newsData[i].url;
                     var post_date    = themeix.timeAndDate(newsData[i].published_at);
                     news_title       = news_title.substring(0, 40);
+                    var post_content = newsData[i].html;
+                    // p tag text starts at 33rd position.
+                    var snippet      = post_content.substring(33, 85) + "...";
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
+                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div>');
                     } else {
 
-                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
+                        wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div>');
                     }
 
                 }
@@ -98,13 +101,16 @@ var themeix = {
                     var news_url     = newsData[i].url;
                     var post_date    = themeix.timeAndDate(newsData[i].published_at);
                     news_title       = news_title.substring(0, 50);
+                    var post_content = newsData[i].html;
+                    // debugger; // p tag text starts at 33rd position.
+                    var snippet      = post_content.substring(33, 85) + "...";
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
+                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div>');
                     } else {
 
-                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i>' + post_date + '</span></div></div>');
+                        post_wrapper.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div>');
                     }
 
                 }
@@ -129,13 +135,16 @@ var themeix = {
                     var news_url     = newsData[i].url;
                     var post_date    = themeix.timeAndDate(newsData[i].published_at);
                     news_title       = news_title.substring(0, 50);
+                    var post_content = newsData[i].html;
+                    // debugger; // p tag text starts at 33rd position.
+                    var snippet      = post_content.substring(33, 85) + "...";
 
                     if (news_img_src !== null && news_img_src !== "") {
 
-                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div>');
+                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div>');
                     } else {
 
-                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div>');
+                        news_container.append('<div class="single-post"><div class="post-thumb"><div class="small-post-thumb " style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div>');
                     }
 
                 }
@@ -169,7 +178,7 @@ var themeix = {
                     var post_date     = themeix.timeAndDate(newsData[i].published_at);
                     var post_content  = newsData[i].html;
                     var primary_tag   = newsData[i].primary_tag;
-                    var post_text     = post_content.substring(0, words_per_post);
+                    var post_text     = post_content.substring(0, words_per_post) + ' ...';
                     news_title        = news_title.substring(0, 80);
 
                     if (primary_tag  !== null) {
@@ -198,11 +207,11 @@ var themeix = {
                         newsContainer.append('<div class="recent-news"><div class="post-image recent-thumb"> <a class="tag-name" href="' + tag_url + '">' + primary_tag + '</a><div class="recent-post-image" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="recent-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2><ul class="post-meta"><li> <i class="fas fa-calendar-alt"></i> ' + post_date + '</li></ul><p>' + post_text + '</p></div></div>');
                     }
 
-                 $(".post-excerpt .kg-card-markdown iframe").remove();
-                         var str = $( ".post-excerpt .kg-card-markdown" ).text();
+                    $(".post-excerpt .kg-card-markdown iframe").remove();
+                        var str = $( ".post-excerpt .kg-card-markdown" ).text();
                         $(".post-excerpt .kg-card-markdown").text(function(index, currentText) {
                             return currentText.substr(0, 180);
-                       });
+                    });
 
                 }
             }
@@ -230,9 +239,9 @@ var themeix = {
                     news_title         = news_title.substring(0, 50);
 
                     if (news_img_src !== null && news_img_src !== "") {
-                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div></li>');
+                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(' + news_img_src + ');"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div></li>');
                     } else {
-                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <span><i class="fas fa-calendar-alt"></i> ' + post_date + '</span></div></div></li>');
+                        newsContainer.append('<li><div class="single-post"><div class="post-thumb"><div class="small-post-thumb" style="background-image: url(/assets/images/default-img.png);"></div><div class="caption"> <a href="' + news_url + '"><i class="fas fa-link"></i></a></div></div><div class="item-post-content"><h2><a href="' + news_url + '">' + news_title + '</a></h2> <p>' + snippet + '</p></div></div></li>');
                     }
 
                 }
