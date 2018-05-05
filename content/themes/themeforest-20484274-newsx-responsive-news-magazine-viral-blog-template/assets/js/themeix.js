@@ -42,7 +42,7 @@ var themeix = {
     timeAndDate: function(e) {
 
         var a = new Date(e),
-            t = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            t = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
             s = t[a.getMonth()],
             i = a.getDate(),
             o = a.getFullYear(),

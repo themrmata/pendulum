@@ -1,8 +1,8 @@
 {{!< default}} 
-<div class="main-news-slider">
+<div class="section-ptb-3">
     <div class="container">
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-8">
              {{#post}}
                 <div class="top-news-img post-details">
                     {{#if feature_image}}
@@ -30,7 +30,7 @@
                             </ul>
                         </div>
                         <div class="share-icon">
-                            <span>Compartir</span>
+                            <span>share on</span>
                             <ul class="social-icon">
                                 <li>
                                     <a href="http://twitter.com/share?text={{encode title}}@amp;url={{url absolute='true'}}" class="skype"><i class="fa fa-twitter"></i></a>
@@ -47,7 +47,7 @@
                     <div class="previou-next-article">
                         {{#prev_post}}
                         <div class="left-previou">
-                            <a href="{{url}}"><i class="fa fa-angle-left"></i>Previous Article</a>
+                            <a href="{{url}}"><i class="fa fa-angle-left"></i>Artículo Anterior</a>
                             <p><a class="post-link" href="{{url}}">{{title}}</a></p>
                         </div>
                         {{/prev_post}} {{#next_post}}
@@ -57,7 +57,11 @@
                         </div>
                         {{/next_post}}
                     </div>
-                    <div class="about-author">
+                    {{!-- <div class="about-author">
+                        <div class="primary-heading">
+                            <h4>About Author</h4>
+                            <span class="box"></span>
+                        </div>
                         <div class="author-box">
                             {{#author}}
                             <div class="author-img">
@@ -76,14 +80,14 @@
                             </div>
                             {{/author}}
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
-                {{!-- <div class="comments">
+                <div class="comments">
                     {{> 'disqus_comments'}}
-                </div> --}}
+                </div>
                 {{/post}}
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-4 pt-18">
                 <div class="single-post-sidebar">
                     {{> 'sidebar'}}
                 </div>
@@ -95,25 +99,7 @@
     {{!-- <div class="add-area-content text-center">
         <div class="container">
             <div class="row">
-                  {{> 'big_banner_add' }}
-            </div>
-        </div>
-    </div> --}}
-    <!-- purchase now -->
-    {{!-- <div class="purchase-now mt-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <div class="left-section">
-                        <h5>Do you have any presale question to ask?</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-sm-offset-1">
-                    <div class="themeix-button">
-                        <a href="index.html" class="orange-button event-button purchase-btn">Purchase Now</a>
-                    </div>
-                </div>
+                {{> 'big_banner_add'}}
             </div>
         </div>
     </div> --}}
