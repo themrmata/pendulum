@@ -57,7 +57,7 @@ var themeix = {
         var wrapper = $(".category-news-one ul li");
         $.get(ghost.url.api("posts", {
             filter: "tag:" + post_type_two + "",
-            limit: 5
+            limit: 3
         })).done(function(news) {
             var newsData = news.posts;
             if (newsData.length > 0) {
