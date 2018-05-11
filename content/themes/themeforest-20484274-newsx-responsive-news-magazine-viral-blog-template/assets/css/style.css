@@ -536,6 +536,7 @@ fieldset {
 	color: #989898;    
 	line-height: normal;
 	display: flex;
+	padding-top: 5px;
 }
 .item-post-content span i{
 	margin-right: 8px;

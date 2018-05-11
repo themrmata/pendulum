@@ -66,7 +66,7 @@ var themeix = {
                     var news_img_src = newsData[i].feature_image;
                     var news_url     = newsData[i].url;
                     var post_date    = themeix.timeAndDate(newsData[i].published_at);
-                    news_title       = news_title.substring(0, 40);
+                    news_title       = news_title.substring(0, 32) + "...";
                     var post_content = newsData[i].html;
                     // p tag text starts at 33rd position.
                     var snippet      = post_content.substring(33, 85) + "...";
@@ -100,7 +100,7 @@ var themeix = {
                     var news_img_src = newsData[i].feature_image;
                     var news_url     = newsData[i].url;
                     var post_date    = themeix.timeAndDate(newsData[i].published_at);
-                    news_title       = news_title.substring(0, 50);
+                    news_title       = news_title.substring(0, 32) + "...";
                     var post_content = newsData[i].html;
                     // debugger; // p tag text starts at 33rd position.
                     var snippet      = post_content.substring(33, 85) + "...";
@@ -134,7 +134,7 @@ var themeix = {
                     var news_img_src = newsData[i].feature_image;
                     var news_url     = newsData[i].url;
                     var post_date    = themeix.timeAndDate(newsData[i].published_at);
-                    news_title       = news_title.substring(0, 50);
+                    news_title       = news_title.substring(0, 32) + "...";
                     var post_content = newsData[i].html;
                     // debugger; // p tag text starts at 33rd position.
                     var snippet      = post_content.substring(33, 85) + "...";
