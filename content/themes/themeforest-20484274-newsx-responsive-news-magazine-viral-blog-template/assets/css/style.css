@@ -45,14 +45,15 @@
 ================================*/
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: Palatino, Georgia, "Times New Roman", serif;
+	font-weight: normal;
+	font-size: 0.8764em;
+	line-height: 1.5em;
+	margin: 0;
 	color: #2b2b2b;
 	font-size: 16px;
-	font-weight: 400;
 	background: #FFFFFF;
-	line-height: 24px;
-	margin: 0;
-	padding: 0;
+
 	-ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
@@ -103,10 +104,9 @@ h3,
 h4,
 h5,
 h6{
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
+	font-weight: bold;
 	margin: 0;
-	line-height: 30px;
+	/* line-height: 30px; */
 	text-rendering: optimizeLegibility;
 }
 h1{
@@ -134,9 +134,8 @@ a:focus,a:hover{
     transition: all 0.5s ease 0s;
 }
 p{
-	font-size: 1.11111em;
-	font-weight: 400;
-	line-height: 1.5em;
+    font-size: 1.1429em;
+    line-height: 1.6125em; 
 }
 img{
 	max-width: 100%;
@@ -177,7 +176,6 @@ fieldset {
 	box-sizing: border-box;
 	color: #4b545f;
 	background: #fff;
-	/* font-family: 'Times New Roman', Times, serif; */
 	padding: 10px 15px;
 	margin: 30px 0px;
 	-webkit-transition: all 0.1s ease-in-out;
@@ -412,7 +410,6 @@ fieldset {
 .top-news h1 a {
 	color: #22263b;
 	transition: all .4s linear 0s;
-	font-family: "Roboto";
 }
 .top-news h1 a:hover {
 	color: #E12866;
@@ -433,7 +430,6 @@ fieldset {
 	min-width: 134px;
 }
 .item-post-content h2 {
-    line-height: 24px;
     font-size: 16px;
     font-weight: 700;
     max-height: 75px;

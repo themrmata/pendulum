@@ -427,7 +427,7 @@ var themeix = {
 
         $("#search-field").ghostHunter({
             results: "#search-result",
-            info_template: "<p class='search-counter'>Number of posts found: {{amount}}</p>",
+            info_template: "<p class='search-counter'>Numero de publicaciones encontradas: {{amount}}</p>",
             result_template: "<div class='single-result info'> <a href='{{link}}'><h3 class='search-title'>{{title}}</h3><p class='search-date'>{{pubDate}}</p>{{description}}</a></div>",
             onKeyUp: true
         });
