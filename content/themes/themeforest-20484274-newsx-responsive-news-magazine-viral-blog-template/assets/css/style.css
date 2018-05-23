@@ -1465,7 +1465,7 @@ ul.info li::before {
         16. footer section
 =====================================*/
 .footer-area{
-    background: url("/assets/images/bg.jpg");
+    /* background: url("/assets/images/bg.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
