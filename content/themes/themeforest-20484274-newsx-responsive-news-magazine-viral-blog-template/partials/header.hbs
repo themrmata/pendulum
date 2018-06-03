@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <a href="https://www.asointegracion.org/"><img src="/assets/images/logo_sm.png" alt="{{@blog.title}}"></a>
+                    <a href="https://asointegra.azurewebsites.net/"><img src="/assets/images/logo_sm.png" alt="{{@blog.title}}"></a>
                     
                 </div>
                 
@@ -25,13 +25,19 @@
         <div class="header-section pin-style">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-11 nopadding">
+                    <div class="col-md-8 nopadding">
                         {{navigation}} 
                     </div> 
-                    <div class="col-md-1">
+                    <div class="col-md-4">
                         <div class="drop-card hidden-xs hidden-sm">
+                            
                         <div class="search-btn">
-                            <button class="search-link" data-toggle="modal" data-target="#search-page" ><i class="fa fa-search"></i></button>
+                            <input id="search-term-front" type="text" placeholder="Busca aquí">
+                            <button class="search-link" 
+                                    data-toggle="modal" 
+                                    data-target="#search-page" >
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
                          {{> 'search-page'}}
                         </div>

@@ -306,8 +306,14 @@ fieldset {
 	float:right;
 }
 .search-btn {
-	text-align:right;
+	float: right;
 }
+.search-btn input {
+	margin-top: 18px;
+	border: 3px solid #2196F3;
+}
+
+
 /*============================
 	4. Menu style
 ==============================*/
@@ -401,14 +407,14 @@ fieldset {
 
 .top-news h1, .page-heading h1 {
 	font-size: 30px;
-	color: #22263b;
+	color: #2196F3;
 	line-height: 40px;
 	font-weight: 700;
 	margin-bottom: 20px;
 	margin-top: 18px;
 }
 .top-news h1 a {
-	color: #22263b;
+	color: #2196F3;
 	transition: all .4s linear 0s;
 }
 .top-news h1 a:hover {
@@ -745,12 +751,11 @@ a.tag-name:focus {
       9. search button section
 =====================================*/
 .search-link {
-  background:transparent;
-  border:medium none;
+  border: 3px solid #2196F3;
+  background: #2196F3;
   color:#fff;
-  padding-top:18px;
   cursor: pointer;
-  margin-top: 3px;
+  margin-top: 18px;
 }
 button.search-link:focus {
 	outline: 0;
@@ -1465,7 +1470,7 @@ ul.info li::before {
         16. footer section
 =====================================*/
 .footer-area{
-    /* background: url("/assets/images/bg.jpg"); */
+    background: url("/assets/images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
