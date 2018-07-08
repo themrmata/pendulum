@@ -2643,27 +2643,42 @@ body.tag-template .add-area-content.text-center.section-ptb {
     padding-top: 0;
 }
 
+.big-title {
+	font-family: Georgia, serif;
+	font-size: 36px;
+	font-weight: bolder;
+	width: 100%;
+	margin-left: 0.25em 0;
+	padding: 0.35em 40px;
+	line-height: 1.2;
+	position: relative;
+	color: #383838;
+}
+
+.quote-right {
+	margin-left: 4em;
+}
 
 blockquote {
 	font-family: Georgia, serif;
-	font-size: 28px;
+	font-size: 18px;
 	font-style: italic;
 	width: 100%;
-	margin: 0.25em 0;
-	padding: 0.35em 40px;
-	line-height: 1.45;
+	margin: 1em 3em 0;
+	line-height: 1;
 	position: relative;
-	color: #383838;
+	color: #7a7a7a;
 }
 	
 blockquote:before {
 	display: block;
-	padding-left: 10px;
+	padding-left: 5px;
 	content: "\201C";
-	font-size: 80px;
+	font-size: 20px;
 	position: absolute;
+	padding-left: 10px;
 	left: -20px;
-	top: -20px;
+	top: -10px;
 	color: #7a7a7a;
 }
 
@@ -2672,7 +2687,6 @@ blockquote cite {
 	font-size: 14px;
 	display: block;
 	margin-top: 5px;
-	/* text-align: right; */
 }
 	
 blockquote cite:before {
