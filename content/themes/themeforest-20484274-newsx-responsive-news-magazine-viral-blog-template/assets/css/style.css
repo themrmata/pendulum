@@ -330,6 +330,15 @@ fieldset {
 	margin: 0;
 	padding: 0;
 }
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
 .main-menu .navbar-nav > li > a {
 	padding-bottom: 20px;
 	padding-top: 20px;
