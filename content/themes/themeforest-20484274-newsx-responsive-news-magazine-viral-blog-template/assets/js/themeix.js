@@ -510,9 +510,9 @@ var themeix = {
         this.post_type_seven_function();
         this.scrolltop();
         this.themeix_search();
-        this.media_feature();
-        this.responsive_video();
-        this.showing_adds();
+        // this.media_feature();
+        // this.responsive_video();
+        // this.showing_adds();
         this.syntax_highlighter();
 
         this.custom_listeners();
@@ -521,4 +521,22 @@ var themeix = {
 
 $(document).ready(function() {
     themeix.init();
+
+    $('body').ihavecookies({
+        title: "Política de Privacidad",
+        message: "Esta web utiliza cookies propias y de terceros para analizar la navegación, mejorando así su experiencia y nuestros servicios. Si continúa navegando, consideramos que ofrece su consentimiento para su uso. Consulte nuestra política de privacidad información adicional sobre su información personal.",
+        link: "/privacidad/",
+        delay: 2000,
+        expires: 30,
+        acceptBtnLabel: 'Aceptar',
+        moreInfoLabel: 'Más información',
+        // cookieTypes: [    we are currently incapable to opt out analytics on a per user basis
+        //     {
+        //         type: 'Analítica',
+        //         value: 'analitica',
+        //         description: 'Estas cookies estan relacionadas al desempeño del sistema, asi como de información estadística orientada a datos demogragicos, y de utilización para poder mejorar su experiencia.'
+        //     }
+        // ]
+    });
+
 });
