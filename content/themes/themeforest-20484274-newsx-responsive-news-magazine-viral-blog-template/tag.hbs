@@ -16,7 +16,7 @@
                 </div>
                 <div class="news-photo-gallery bg-none paddin-left-right-0">
                     <div class="row">
-                        {{#foreach posts limit="6"}}
+                        {{#foreach posts}}
                         <div class="col-sm-6">
                             <div class="photo-gallery-single margin-none">
                                 <div class="post-image height-240" style="{{#if feature_image }} background-image:url({{img_url feature_image}}); {{else}} background-image:url(/assets/images/default-img.png); {{/if}}">
