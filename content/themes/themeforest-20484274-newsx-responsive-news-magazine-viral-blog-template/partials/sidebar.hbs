@@ -7,7 +7,7 @@
             </div>
             <div class="categories-list">
                 <ul>
-                {{#get "tags" as |tag_info| }}
+                {{#get "tags" limit="8" as |tag_info| }}
                     {{#foreach tag_info}}
                     <li><a href="{{url}}">{{name}}</a></li>
                     {{/foreach}}
